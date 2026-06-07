@@ -75,3 +75,9 @@ const revealObserver = new IntersectionObserver(entries => {
 }, { rootMargin: '0px 0px -60px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ===========================
+   ANNO CORRENTE NEL FOOTER
+   =========================== */
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
